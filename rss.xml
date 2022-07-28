@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>聪聪碎碎念</title>
+        <link>http://www.ccoder.cc/</link>
+        <description>聪聪碎碎念,记录开发生活,ccoderJava,聪聪,ccoder</description>
+        <lastBuildDate>Thu, 28 Jul 2022 08:29:16 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <item>
+            <title><![CDATA[模板文件template]]></title>
+            <link>http://www.ccoder.cc/notestemplate/</link>
+            <guid>http://www.ccoder.cc/notestemplate/</guid>
+            <pubDate>Fri, 29 Jul 2022 10:49:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Java对象头和锁的升级过程]]></title>
+            <link>http://www.ccoder.cc/java-object-header-and-lock-upgrade/</link>
+            <guid>http://www.ccoder.cc/java-object-header-and-lock-upgrade/</guid>
+            <pubDate>Thu, 28 Jul 2022 14:38:57 GMT</pubDate>
+            <description><![CDATA[[toc]
+
+hello，大家好，我是聪聪。
+
+今天意外看到Java中有一个查看Java对象头的工具类JOL，正好可以通过Java对象头中所存储的信息来回顾一次锁的升级过程。
+
+1.JOL(Java Object Layout)
+> （Java对象布局）是分析JVM中对象布局方案的微型工具箱。这些工具大量使用不安全、JVMTI和可服务性代理（SA）来解码实际的对象布局、足迹 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-16-110323.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[MySQL中sql_mode参数导致的问题]]></title>
+            <link>http://www.ccoder.cc/mysql-sqlmode/</link>
+            <guid>http://www.ccoder.cc/mysql-sqlmode/</guid>
+            <pubDate>Fri, 29 Jul 2022 10:49:10 GMT</pubDate>
+            <description><![CDATA[[toc]
+
+hello，大家好，我是聪聪。
+
+1.故事背景
+
+今天在auto_test环境中发现新加密数据均无法解密,全部返回密文。
+
+那么就意味着此时加解密插件未生效或者解密数据时出现了异常，直接返回了原文 。
+
+查看日志发现待解密数据dataDec-1hYWHtIqpctKu7DY+TChRjg= 在去掉前缀dataDec-1 后无法进行Base64转换`Inp ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-28-064228.bmp">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[portainer下配置Redis Sentinel]]></title>
+            <link>http://www.ccoder.cc/portainer-redis-sentinel/</link>
+            <guid>http://www.ccoder.cc/portainer-redis-sentinel/</guid>
+            <pubDate>Thu, 28 Jul 2022 14:20:03 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+今天在本地启动一些项目时，无法连接公司Redis服务。
+那就在本地portainer上拉起整个Redis集群
+
+对了 ，portainer是一个可视化的docker操作页面，提供应用模板快速部署、镜像网络数据卷基本操作、事件日志显示、容器console操作、swarm集群和服务集群管理。同时还提供用户权限、租户管理。
+当然可以链接到云服务上进行镜像管 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-11-135430.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Dubbo-ExtensionLoader]]></title>
+            <link>http://www.ccoder.cc/dubbo-extensionloader/</link>
+            <guid>http://www.ccoder.cc/dubbo-extensionloader/</guid>
+            <pubDate>Thu, 02 Dec 2021 14:58:56 GMT</pubDate>
+            <description><![CDATA[[[toc]]
+
+扩展点加载机制
+
+> Dubbo的扩展点加载来自于JDK的标准SPI(Service Provider Interface)扩展点发现机制，并对其进行加强。
+
+来自Dubbo官网的描述，Dubbo改进了JDK标准SPI，并且解决了一下问题:
+
+JDK标准的SPI会一次性实例化扩展点所有实现，如果扩展实现初始化很耗时，但如果没有用上也加载就会很浪费资源。
+如果扩展点加 ...]]></description>
+            <enclosure url="https://tva1.sinaimg.cn/large/008i3skNgy1gsnlg4wo9tj30te07x0u6.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ISO20022标准介绍]]></title>
+            <link>http://www.ccoder.cc/iso20022-biao-zhun-jie-shao/</link>
+            <guid>http://www.ccoder.cc/iso20022-biao-zhun-jie-shao/</guid>
+            <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[[[toc]]
+
+1.什么是ISO20022 标准
+
+> ​    ISO 20022 是一种新兴的全球开放式支付消息传递标准。一种为全球支付数据创建的通用语言和模型，一种提供笔其他标准更高质量的数据，这意味着所有人都能够获得更高质量的付款。一种可以适应新需求和新方法的产品。一个不受单一利益控制的标准。一种可供业内任何人使用并在任何网络上实施的工具。
+
+我们将从ISO2002 ...]]></description>
+            <enclosure url="http://www.ccoder.cc/./files/ISO20022/image-20211128175122910.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ISO20022消息建模]]></title>
+            <link>http://www.ccoder.cc/iso20022-xiao-xi-jian-mo/</link>
+            <guid>http://www.ccoder.cc/iso20022-xiao-xi-jian-mo/</guid>
+            <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[[[toc]]]
+
+1.消息模型
+
+在ISO上下文中，该标准描述了赖以表达信息的协议，而语法是用表达信息的格式或者语言。消息定义提供了对可在各方之间交换的信息和数据格式，包括字段长度、代码、字符集等分类。
+
+ISO 20022消息可用于完整的端到端支付，包括客户—银行(支付)、银行—银行(支付清算与结算)等，这些金融消息定义分为多个业务领域。同时是由4个业务领域代码来标志。
+
+acmt— ...]]></description>
+            <enclosure url="http://www.ccoder.cc/./files/ISO20022/image-pain-uml.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ISO20022应用场景]]></title>
+            <link>http://www.ccoder.cc/iso20022-yin-yong-chang-jin/</link>
+            <guid>http://www.ccoder.cc/iso20022-yin-yong-chang-jin/</guid>
+            <pubDate>Fri, 03 Dec 2021 18:28:16 GMT</pubDate>
+            <description><![CDATA[[[toc]]
+
+ISO20022标准应用前景展望
+
+​        ISO 20022《金融服务　金融业通用报文方案》标准是针对金融行业信息交换问题，利用网络及XML技术制订的一个先进的通用报文方案。目前，符合ISO 20022标准的报文规范已在全球范围内得到广泛的应用。ISO对标准的推广使用非常重视，专门组建了ISO 20022标准报文库供全球金融界免费使用，并成立了ISO 20022 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[XTransfer-(高级)支付后端开发工程师-面试总结]]></title>
+            <link>http://www.ccoder.cc/xtransfer-one/</link>
+            <guid>http://www.ccoder.cc/xtransfer-one/</guid>
+            <pubDate>Fri, 10 Dec 2021 14:02:23 GMT</pubDate>
+            <description><![CDATA[由于目前是做的支付行业项目，涉及到银行出入款项目可能会文件服务器，所以算是一个简单的开场问题。
+
+ftp和sftp都是日常工作中常用的文件传输方式。
+
+FTP
+
+需要使用客户端和服务端进行交互。服务端用来存储文件，客户端可以使用FTP协议访问服务端上的资源。
+
+默认开放21、20两个端口。21端口用于传输控制类消息，20端口是否使用取决于传输模式：被动模式(Passive)和主 ...]]></description>
+            <enclosure url="http://www.ccoder.cc/./files/interview/ftp_port.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[蚂蚁集团—一面技术—面试总结]]></title>
+            <link>http://www.ccoder.cc/alipay-ji-shu-mian-one/</link>
+            <guid>http://www.ccoder.cc/alipay-ji-shu-mian-one/</guid>
+            <pubDate>Wed, 22 Dec 2021 19:39:14 GMT</pubDate>
+            <description><![CDATA[2.如何保证银行清结算文件可信,如何确保不被篡改
+
+3.Redis的分布式锁
+
+4.Redis的“一主二从三哨兵”
+
+5.如何不用db、redis、zk解决分布式锁
+
+5.1 Map本地高可用缓存
+
+5.2 Map缓存扩展到分布式如何保证数据一致性和高可用
+
+5.3 Map缓存分布式如何扩容、一致性哈希、虚拟node等实施方案
+
+5.4 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[蚂蚁集团—二面技术(直属领导)—面试总结]]></title>
+            <link>http://www.ccoder.cc/alipay-ji-shu-mian-two/</link>
+            <guid>http://www.ccoder.cc/alipay-ji-shu-mian-two/</guid>
+            <pubDate>Wed, 15 Dec 2021 22:03:14 GMT</pubDate>
+            <description><![CDATA[方面面试官了解目前岗位职能，日常工作(业务+技术点)
+
+2.介绍一个你觉得最有价值的项目
+2.1 业务层面介绍(业务栈)
+2.2 技术层面介绍(技术栈)
+这里可以引入自己非常熟悉的知识点，引导面试官下一个问题往这上面提问。
+
+3.(前面引入)分布式事务在业务上如何落地的
+
+4.(前面引入)Redis和DB一致性问题的解决方案
+> + [分布式缓存一致性]( ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[支付宝-国际事业部-高级Java工程师]]></title>
+            <link>http://www.ccoder.cc/alipay-kuajin-jishumian-one/</link>
+            <guid>http://www.ccoder.cc/alipay-kuajin-jishumian-one/</guid>
+            <pubDate>Tue, 28 Dec 2021 18:18:49 GMT</pubDate>
+            <description><![CDATA[1.1大文件查找前100个最大的数字
+> 有一个文本文件(data.txt)里面每行为一个数字切文件预计有100W行左右,请以最快的速度在一台主机4核cpu/1G内存的主机上找出前100个最大的数字，并且输出其在文件所在行。
+> 注意：请尽量提供该程序在生产运行所需全部信息。
+
+1.2实现LRU算法(禁用LinkedHashMap)
+> LRU(Least recently us ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[货币代码]]></title>
+            <link>http://www.ccoder.cc/huo-bi-dai-ma/</link>
+            <guid>http://www.ccoder.cc/huo-bi-dai-ma/</guid>
+            <pubDate>Fri, 11 Feb 2022 18:24:22 GMT</pubDate>
+            <description><![CDATA[ALL	8	阿尔巴尼列克 - Albania Lek	阿尔巴尼
+DZD	12	阿尔及利亚第纳尔 - Algerian Dinar	阿尔及利亚
+ARS	32	阿根廷比索 - Argentina Peso	阿根廷
+AUD	36	澳元 - Australia Dollar	澳大利亚
+BSD	44	巴哈马元 - Bahamian Dollar	巴哈马元
+BHD	48	巴林第纳尔 - Bahrain Din ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[京东京喜-武汉-高级Java工程师]]></title>
+            <link>http://www.ccoder.cc/jd-wuhan-jishumina-one/</link>
+            <guid>http://www.ccoder.cc/jd-wuhan-jishumina-one/</guid>
+            <pubDate>Wed, 05 Jan 2022 14:08:21 GMT</pubDate>
+            <description><![CDATA[RabbitMQ 消息最终一致性解决方案
+
+RabbitMQ 延迟队列、消息延迟推送
+> + RabbitMQ延迟队列
+> + RabbitMQ消费端限流、TTL、死信队列 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[欢聚集团(Joyy)—Java海外支付岗位—技术面(一面)总结]]></title>
+            <link>http://www.ccoder.cc/joyy-ji-shu-mian-one/</link>
+            <guid>http://www.ccoder.cc/joyy-ji-shu-mian-one/</guid>
+            <pubDate>Sat, 11 Dec 2021 18:41:16 GMT</pubDate>
+            <description><![CDATA[给定一个房间连接,准时参加牛客网面试题笔试。
+leetcode 144-二叉树的前序遍历
+牛客网 [求二叉树的前序遍历](https://www.nowcoder.com/questionTerminal/501fb3ca49bb4474bf5fa872 ...]]></description>
+            <enclosure url="http://www.ccoder.cc/./files/interview/jvm_memory.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[欢聚集团(Joyy)—Java海外支付岗位—业务技术面(二面+三面)总结]]></title>
+            <link>http://www.ccoder.cc/joyy-ye-wu-mian-two/</link>
+            <guid>http://www.ccoder.cc/joyy-ye-wu-mian-two/</guid>
+            <pubDate>Wed, 15 Dec 2021 22:43:08 GMT</pubDate>
+            <description><![CDATA[路由策略落库方案
+可以往规则引擎+Drools进行靠,给出一个合理的解决方案,包括如何快速响应、通用、可动态配置。
+渠道评分规则
+交易卡组织
+对公对私
+交易费率(单笔、百分比、交易额度阶梯)
+渠道历史成功率/赔付率
+渠道结算周期
+
+从上述维度进行系列路由、并且按照一定维度权重进行评分，给出一个最优渠道+部分备用渠道，支付失败时进行切换备用渠道，提高整体支付成功 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[面试知识点-Dubbo]]></title>
+            <link>http://www.ccoder.cc/mianshi-dubbo/</link>
+            <guid>http://www.ccoder.cc/mianshi-dubbo/</guid>
+            <pubDate>Wed, 22 Dec 2021 15:34:45 GMT</pubDate>
+            <description><![CDATA[Dubbo RPC调用过程
+
+Dubbo SPI机制
+
+Dubbo动态代理javassist和jdk区别
+
+Dubbo服务本地缓存
+
+Dubbo服务治理、服务发现、服务优化
+
+Dubbo中负载策略、熔断策略、集群方式 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[面试知识点-Java]]></title>
+            <link>http://www.ccoder.cc/mianshi-fenbushi/</link>
+            <guid>http://www.ccoder.cc/mianshi-fenbushi/</guid>
+            <pubDate>Wed, 22 Dec 2021 15:34:45 GMT</pubDate>
+            <description><![CDATA[单体架构、垂直架构、面向服务架构SOA、微服务架构
+
+分布式事务
+
+分布式锁
+
+SkyWalking核心组件(分布式链路追踪)
+Agent探针 采集服务信息trace grpc上报
+OAP 收集信息、响应UI请求
+UI
+
+配置中心(nacos、apollo、SpringCloud Config)差异 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[面试知识点-Java]]></title>
+            <link>http://www.ccoder.cc/mianshi-java/</link>
+            <guid>http://www.ccoder.cc/mianshi-java/</guid>
+            <pubDate>Wed, 22 Dec 2021 15:34:45 GMT</pubDate>
+            <description><![CDATA[HashMap扩容机制
+
+HashMap无法保证线程安全的原因
+
+AVL树和红黑树比较
+
+ConcurrentHashMap 如何保证线程安全
+CAS Synchronized
+Segment ReentrantLock
+
+优先队列PriorityQueue的原理
+
+LinkedTransferQueue和SynchronousQueue ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[面试知识点-场景解决方案]]></title>
+            <link>http://www.ccoder.cc/mianshi-jiejuefangan/</link>
+            <guid>http://www.ccoder.cc/mianshi-jiejuefangan/</guid>
+            <pubDate>Wed, 22 Dec 2021 15:34:45 GMT</pubDate>
+            <description><![CDATA[解决流量激增问题
+数据预处理
+Dubbo异步编程
+并发处理(redis单线程+自增数值) 提前将id分发到各个broker
+redis集合set,存储商品ID和用户ID
+单用户IP的qps
+DNS
+
+接口耗时性能调优
+减少非必要循环
+DB中SQL调优
+连接池调优
+串行换并行异步
+缓存(本地缓存Map/ConcurrentHashMa ...]]></description>
+        </item>
+    </channel>
+</rss>
