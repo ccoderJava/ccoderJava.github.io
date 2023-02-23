@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>聪聪碎碎念</title>
+        <link>http://www.ccoder.cc/</link>
+        <description>聪聪碎碎念,记录开发生活,ccoderJava,聪聪,ccoder</description>
+        <lastBuildDate>Thu, 23 Feb 2023 08:31:06 GMT</lastBuildDate>
+        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <generator>https://github.com/webmasterish/vuepress-plugin-feed</generator>
+        <item>
+            <title><![CDATA[模板文件template]]></title>
+            <link>http://www.ccoder.cc/notestemplate/</link>
+            <guid>http://www.ccoder.cc/notestemplate/</guid>
+            <pubDate>Fri, 29 Jul 2022 10:49:10 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Java对象头和锁的升级过程]]></title>
+            <link>http://www.ccoder.cc/java-object-header-and-lock-upgrade/</link>
+            <guid>http://www.ccoder.cc/java-object-header-and-lock-upgrade/</guid>
+            <pubDate>Thu, 28 Jul 2022 14:38:57 GMT</pubDate>
+            <description><![CDATA[[toc]
+
+hello，大家好，我是聪聪。
+
+今天意外看到Java中有一个查看Java对象头的工具类JOL，正好可以通过Java对象头中所存储的信息来回顾一次锁的升级过程。
+
+1.JOL(Java Object Layout)
+> （Java对象布局）是分析JVM中对象布局方案的微型工具箱。这些工具大量使用不安全、JVMTI和可服务性代理（SA）来解码实际的对象布局、足迹 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-16-110323.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[MySQL中sql_mode参数导致的问题]]></title>
+            <link>http://www.ccoder.cc/mysql-sqlmode/</link>
+            <guid>http://www.ccoder.cc/mysql-sqlmode/</guid>
+            <pubDate>Fri, 29 Jul 2022 10:49:10 GMT</pubDate>
+            <description><![CDATA[[toc]
+
+hello，大家好，我是聪聪。
+
+1.故事背景
+
+今天在auto_test环境中发现新加密数据均无法解密,全部返回密文。
+
+那么就意味着此时加解密插件未生效或者解密数据时出现了异常，直接返回了原文 。
+
+查看日志发现待解密数据dataDec-1hYWHtIqpctKu7DY+TChRjg= 在去掉前缀dataDec-1 后无法进行Base64转换`Inp ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-28-064228.bmp">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[portainer下配置Redis Sentinel]]></title>
+            <link>http://www.ccoder.cc/portainer-redis-sentinel/</link>
+            <guid>http://www.ccoder.cc/portainer-redis-sentinel/</guid>
+            <pubDate>Thu, 28 Jul 2022 14:20:03 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+今天在本地启动一些项目时，无法连接公司Redis服务。
+那就在本地portainer上拉起整个Redis集群
+
+对了 ，portainer是一个可视化的docker操作页面，提供应用模板快速部署、镜像网络数据卷基本操作、事件日志显示、容器console操作、swarm集群和服务集群管理。同时还提供用户权限、租户管理。
+当然可以链接到云服务上进行镜像管 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-11-135430.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[《领域驱动设计》之软件复杂度]]></title>
+            <link>http://www.ccoder.cc/ddd-software-complexty/</link>
+            <guid>http://www.ccoder.cc/ddd-software-complexty/</guid>
+            <pubDate>Mon, 08 Aug 2022 11:13:36 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+最近闲暇时间看了下张逸的《领域驱动设计》，书中对于软件复杂度包含的一些内容，让我有些同感。目前接触的一些系统中都会有一些技术债、坏味道在其中。
+
+那么就在这里结合自身现有的一些系统设计，做一个随笔记录。
+
+1.复杂系统
+
+什么是复杂的系统呢？
+> 由大量相互作用的部分组成的系统。与整个系统比起来，这些组成部分相对简单，没有中央控制，组成部 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-08-09-130840.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[利用SPI机制进行插件解耦]]></title>
+            <link>http://www.ccoder.cc/java-spi/</link>
+            <guid>http://www.ccoder.cc/java-spi/</guid>
+            <pubDate>Tue, 16 Aug 2022 15:07:09 GMT</pubDate>
+            <description><![CDATA[[toc]
+
+hello，大家好，我是聪聪。
+
+最近在重构一款底层数据加解密中间件，里面有一些内容需要解耦：
+
+针对不同数据源处理单独，MySQL、MongoDB、ES数据源进行加解密处理。
+可插拔扩展不同加解密算法。
+兼容不同日志框架做数据脱敏，自定义客制化脱敏规则。
+
+在这里设想通过SPI机制，让接入业务方可进行插件客制化扩展。
+中间件内提供业务通用AES加解密方法，同时 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-08-16-064829.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[MySQL-Explain总结]]></title>
+            <link>http://www.ccoder.cc/mysql-explain/</link>
+            <guid>http://www.ccoder.cc/mysql-explain/</guid>
+            <pubDate>Thu, 11 Aug 2022 10:40:11 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+最近在梳理MySQL常用知识点，将已有知识点进行结构化、方便后续回稳固。
+
+今天就来总结梳理一下常用的explain命令。
+
+explian命名是用来获取查询执行计划的信息，查询优化器是如何决定执行查询的主要方法。
+
+如何使用
+
+使用非常简单，只需在查询语句select关键字前添加explain即可。MySQL会在该查询方 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-28-064228.bmp">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[代理模式-Proxy]]></title>
+            <link>http://www.ccoder.cc/proxy-design/</link>
+            <guid>http://www.ccoder.cc/proxy-design/</guid>
+            <pubDate>Sat, 20 Aug 2022 18:45:14 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+1.介绍
+
+最近在做加解密中间件，使用mybatis中拦截器做数据加解密处理时，看到很多动态代理的逻辑。因此再次系统的回顾一下设计模式中代理模式是怎样的，我们又该在哪些场景使用。
+> 代理模式 是一种结构型设计模式。主要解决了避免直接访问真实对象带来的问题，提供一个代理用来控制着对原始对象的访问，并且能够在请求的前、后做一些增强处理。
+> ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-08-25-122329.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[Go语言基础-数组]]></title>
+            <link>http://www.ccoder.cc/go-array/</link>
+            <guid>http://www.ccoder.cc/go-array/</guid>
+            <pubDate>Wed, 21 Sep 2022 14:10:02 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+1.数组定义
+
+数组是同一类型元素的集合。在go中数组从声明时便已确认，使用时可以修改其成员，但是数组大小不可变化。
+> [n]T 用来定义数据
+> + n 数组元素个数
+> + T 数组元素的数据类型
+>
+> var a [10]int
+> 定义一个长度为10，元素类型为int的数组 a
+
+2.数组初始化
+
+2.1 使用初始化列表来 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-07-28-064228.bmp">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[viper读取配置文件]]></title>
+            <link>http://www.ccoder.cc/go-viper/</link>
+            <guid>http://www.ccoder.cc/go-viper/</guid>
+            <pubDate>Fri, 23 Sep 2022 16:29:21 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+介绍
+
+Viper是适用于Go应用程序的完整配置解决方案。它被设计用于在应用程序中工作，并且可以处理所有类型的配置需求和格式。它支持以下特性：
+
+设置默认值
+从JSON、TOML、YAML、HCL、envfile和`Java properties ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-09-23-070821.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[策略模式与工厂模式实践]]></title>
+            <link>http://www.ccoder.cc/strategy-factory-design/</link>
+            <guid>http://www.ccoder.cc/strategy-factory-design/</guid>
+            <pubDate>Sat, 24 Sep 2022 16:49:15 GMT</pubDate>
+            <description><![CDATA[hello，大家好，我是聪聪。
+
+[toc]
+
+1.介绍
+
+策略模式是一种行为设计模式， 它能让你定义一系列算法， 并将每种算法分别放入独立的类中， 以使算法的对象能够相互替换。
+
+日常开发中，对于需要考虑各类场景、各类分支通用逻辑时，就需要考虑是否可以将if-else 、switch 逻辑替换成不同策略算法进行单独处理，提高代码的可读性、可维护性，避免代码混乱熵增 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2022-09-24-055827.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[季度汽车-一面]]></title>
+            <link>http://www.ccoder.cc/jiduqiche-one/</link>
+            <guid>http://www.ccoder.cc/jiduqiche-one/</guid>
+            <pubDate>Thu, 23 Feb 2023 16:27:36 GMT</pubDate>
+            <description><![CDATA[1.7 1.8 HashMap区别
+  结构、扩容
+  为何会有头插法和尾插法区别
+  hash冲突如何解决的
+  为何选择红黑树，而不是选择二叉树
+ConcurrentHashMap线程安全如何保证
+  分版本说明，segament、TreeNode
+  为何弃用segament
+  CAS、synchronized、put操作区别
+Synchroni ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[岚晨网络(皮皮)-笔试]]></title>
+            <link>http://www.ccoder.cc/lanchen-bishi/</link>
+            <guid>http://www.ccoder.cc/lanchen-bishi/</guid>
+            <pubDate>Mon, 20 Feb 2023 18:50:36 GMT</pubDate>
+            <description><![CDATA[假如以下sql有慢查，如何分析，如果要优化，该如何做，讲讲原因
+
+     select
+    from
+    t_task
+    where
+    status=1
+    and operate_id=20839
+    and start_time>1371169729
+    and start_time]]></description>
+        </item>
+        <item>
+            <title><![CDATA[岚晨网络(皮皮)-一面]]></title>
+            <link>http://www.ccoder.cc/lanchen-one/</link>
+            <guid>http://www.ccoder.cc/lanchen-one/</guid>
+            <pubDate>Mon, 20 Feb 2023 18:50:36 GMT</pubDate>
+            <description><![CDATA[APP首页热榜数据展示前50，头像、名称、粉丝、热度等各方面信息来源于不同数据方面。如何实时展示、实时更新，考虑启动、限流等发面。
+  热点key解决
+APP首页热点数据搜索，ES中只存储搜索关键字，仍然会根据ID去各方业务数据库中查询。如何设计这样的功能。
+生产服务宕机、不可用经验，如何解决处理。
+团队协作产生分歧，包括与产品需求、跨部门协作，如何解决。
+最有价值项目 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[腾讯CSIG后台一面总结]]></title>
+            <link>http://www.ccoder.cc/tencent-csig-one/</link>
+            <guid>http://www.ccoder.cc/tencent-csig-one/</guid>
+            <pubDate>Wed, 15 Feb 2023 18:21:37 GMT</pubDate>
+            <description><![CDATA[大概可以使用这样一个模板来介绍：
+
+大家好，我是XXX，一个有着丰富的互联网金融、支付行业开发经验的Java软件工程师。
+我热爱编程，并对多线程、JVM、Dubbo、SpringBoot、Redis、Mybatis、MQ等主流技术中间件及其实现原理有着深入的了解和熟练的应用。
+在项目中，我具有较强的分析和解决问题能力，逻辑思维和表达能力，良好的沟通和团队协作能力。
+
+我热衷于参 ...]]></description>
+            <enclosure url="https://ccoder-markdown-oss.oss-cn-shanghai.aliyuncs.com/md/2023-02-15-045751.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[腾讯会议-页面]]></title>
+            <link>http://www.ccoder.cc/tengcent-huiyi-one/</link>
+            <guid>http://www.ccoder.cc/tengcent-huiyi-one/</guid>
+            <pubDate>Mon, 20 Feb 2023 14:51:20 GMT</pubDate>
+            <description><![CDATA[平均
+  实时
+  调度方案如何设计
+  从简单的Java层面出发，如何逐步演进
+单链表中倒数第k个节点。
+  双指针
+redis数据结构 hashset 扩容
+
+数组扩容你怎么设计 ，4个扩容到8个
+  2倍扩容
+  扩容实时读写
+上线时指标监控
+  业务指标
+  应用指标 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[作业帮一面总结]]></title>
+            <link>http://www.ccoder.cc/zuoyebang-one/</link>
+            <guid>http://www.ccoder.cc/zuoyebang-one/</guid>
+            <pubDate>Mon, 20 Feb 2023 18:51:20 GMT</pubDate>
+            <description><![CDATA[上面问题，悲观锁、乐观锁如何选择，如何避免死锁。
+
+进程和线程，PCB，进程状态及其调度策略
+
+Redis数据类型，底层数据格式，如何扩容，时间复杂度、空间复杂度。
+
+AOF扩容流程
+
+分布式事务解决方案
+  消息表
+  消息队列
+  如何解决账户变动
+
+MySQL varchar有最大长度吗，你平时如何设计varchar长度 ...]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Dubbo-ExtensionLoader]]></title>
+            <link>http://www.ccoder.cc/dubbo-extensionloader/</link>
+            <guid>http://www.ccoder.cc/dubbo-extensionloader/</guid>
+            <pubDate>Thu, 02 Dec 2021 14:58:56 GMT</pubDate>
+            <description><![CDATA[[[toc]]
+
+扩展点加载机制
+
+> Dubbo的扩展点加载来自于JDK的标准SPI(Service Provider Interface)扩展点发现机制，并对其进行加强。
+
+来自Dubbo官网的描述，Dubbo改进了JDK标准SPI，并且解决了一下问题:
+
+JDK标准的SPI会一次性实例化扩展点所有实现，如果扩展实现初始化很耗时，但如果没有用上也加载就会很浪费资源。
+如果扩展点加 ...]]></description>
+            <enclosure url="https://tva1.sinaimg.cn/large/008i3skNgy1gsnlg4wo9tj30te07x0u6.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ISO20022标准介绍]]></title>
+            <link>http://www.ccoder.cc/iso20022-biao-zhun-jie-shao/</link>
+            <guid>http://www.ccoder.cc/iso20022-biao-zhun-jie-shao/</guid>
+            <pubDate>Tue, 30 Nov 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[[[toc]]
+
+1.什么是ISO20022 标准
+
+> ​    ISO 20022 是一种新兴的全球开放式支付消息传递标准。一种为全球支付数据创建的通用语言和模型，一种提供笔其他标准更高质量的数据，这意味着所有人都能够获得更高质量的付款。一种可以适应新需求和新方法的产品。一个不受单一利益控制的标准。一种可供业内任何人使用并在任何网络上实施的工具。
+
+我们将从ISO2002 ...]]></description>
+            <enclosure url="http://www.ccoder.cc/./files/ISO20022/image-20211128175122910.png">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ISO20022消息建模]]></title>
+            <link>http://www.ccoder.cc/iso20022-xiao-xi-jian-mo/</link>
+            <guid>http://www.ccoder.cc/iso20022-xiao-xi-jian-mo/</guid>
+            <pubDate>Wed, 01 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[[[toc]]]
+
+1.消息模型
+
+在ISO上下文中，该标准描述了赖以表达信息的协议，而语法是用表达信息的格式或者语言。消息定义提供了对可在各方之间交换的信息和数据格式，包括字段长度、代码、字符集等分类。
+
+ISO 20022消息可用于完整的端到端支付，包括客户—银行(支付)、银行—银行(支付清算与结算)等，这些金融消息定义分为多个业务领域。同时是由4个业务领域代码来标志。
+
+acmt— ...]]></description>
+            <enclosure url="http://www.ccoder.cc/./files/ISO20022/image-pain-uml.png">
+            </enclosure>
+        </item>
+    </channel>
+</rss>
